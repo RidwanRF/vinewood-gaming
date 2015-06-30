@@ -1,0 +1,6 @@
+<meta>
+  <script src="server.lua" type="server" />
+
+  <export function="getConnection" type="server" />
+  <export function="getQueryTool" type="server" />
+</meta>

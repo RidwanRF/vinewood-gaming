@@ -1,0 +1,47 @@
+--[[-------------------------------------------------
+Notes:
+
+> This code is using a relative image filepath. This will only work as long as the location it is from always exists, and the resource it is part of is running.
+    To ensure it does not break, it is highly encouraged to move images into your local resource and reference them there.
+--]]-------------------------------------------------
+
+GUIEditor = {
+    button = {},
+    staticimage = {},
+    window = {},
+    radiobutton = {},
+    label = {},
+    edit = {},
+}
+GUIEditor.window[1] = guiCreateWindow(537, 228, 403, 523, "Network of Entertainment and Gaming", false)
+guiWindowSetSizable(GUIEditor.window[1], false)
+
+GUIEditor.staticimage[1] = guiCreateStaticImage(62, 27, 286, 133, ":guied/images/lgo.png", false, GUIEditor.window[1])
+GUIEditor.label[1] = guiCreateLabel(34, 161, 326, 20, "Username:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[1], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[1], "center", false)
+GUIEditor.edit[1] = guiCreateEdit(73, 179, 263, 23, "", false, GUIEditor.window[1])
+GUIEditor.label[2] = guiCreateLabel(34, 216, 326, 20, "Password:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[2], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[2], "center", false)
+GUIEditor.edit[2] = guiCreateEdit(72, 234, 263, 23, "", false, GUIEditor.window[1])
+GUIEditor.button[1] = guiCreateButton(73, 485, 262, 23, "Return to the login window", false, GUIEditor.window[1])
+GUIEditor.button[6] = guiCreateButton(73, 458, 262, 23, "Create your account!", false, GUIEditor.window[1])
+GUIEditor.label[3] = guiCreateLabel(22, 433, 358, 22, "You will recieve an email with a new password for your account!", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[3], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[3], "center", false)
+GUIEditor.label[4] = guiCreateLabel(34, 273, 326, 20, "Repeat password:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[4], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[4], "center", false)
+GUIEditor.edit[3] = guiCreateEdit(70, 292, 263, 23, "", false, GUIEditor.window[1])
+GUIEditor.label[5] = guiCreateLabel(34, 329, 326, 20, "Email:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[5], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[5], "center", false)
+GUIEditor.edit[4] = guiCreateEdit(70, 346, 263, 23, "", false, GUIEditor.window[1])
+GUIEditor.label[6] = guiCreateLabel(34, 379, 326, 20, "Spawn City:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[6], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[6], "center", false)
+GUIEditor.radiobutton[1] = guiCreateRadioButton(67, 399, 93, 21, "Los Santos", false, GUIEditor.window[1])
+GUIEditor.radiobutton[2] = guiCreateRadioButton(166, 399, 93, 21, "San Fierro", false, GUIEditor.window[1])
+GUIEditor.radiobutton[3] = guiCreateRadioButton(263, 399, 93, 21, "Las Venturas", false, GUIEditor.window[1])
+guiRadioButtonSetSelected(GUIEditor.radiobutton[3], true)

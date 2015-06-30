@@ -1,0 +1,12 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <script src="server.lua" type="server" />
+    <script src="warnings.lua" type="server" />
+    <script src="Admin Functions/warping.luac" type="client" />
+    <script src="Admin Functions/glue.luac" type="client" />
+    <script src="Admin Functions/elementmoving.luac" type="client" />
+	
+	<export function="createNewAdminDxMessage" type="server" />
+	
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

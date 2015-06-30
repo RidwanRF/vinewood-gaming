@@ -1,0 +1,12 @@
+<meta>
+    <info type="map" version="1.0.0"></info>
+    <script src="vehicleLists.luac" type="client" />
+    <script src="client.luac" type="client" />
+    <script src="import_c.luac" type="client" />
+    <script src="server.lua" type="server" />
+    <script src="output.lua" type="server" />
+    <file src="images/car.png" />
+    <file src="images/import.png" />
+    <file src="images/importBlip.png" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

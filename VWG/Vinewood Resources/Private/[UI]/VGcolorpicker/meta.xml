@@ -1,0 +1,11 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <file src="images/markers.png" />
+    <file src="images/hsvPallete.png" />
+    <file src="images/rgbPallete.png" />
+    <file src="images/blank.png" />
+    <export function="openColorpicker" type="client" />
+    <export function="closeColorpicker" type="client" />
+    <export function="setColorpickerColor" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

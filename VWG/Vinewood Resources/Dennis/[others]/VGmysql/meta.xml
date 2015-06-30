@@ -1,0 +1,18 @@
+<!--
+	MySQL exports by UniOn aka Dennis (C)
+	Do not use anything in ths resource without permission of the developer;
+-->
+
+<meta>
+	<info author="Dennis" version="1.0.0" type="script" name="MySQL" description="MySQL config resource" />
+	
+	<script src="mysql.lua"/>
+	
+	<!-- The Exports -->
+	<export function="getConnection"/>
+	<export function="query"/>
+	<export function="querySingle"/>
+	<export function="exec"/>
+	<export function="doesDatabaseColumnExist"/>
+	<export function="createDatabaseColumn"/>
+</meta>

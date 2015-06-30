@@ -1,0 +1,51 @@
+--[[-------------------------------------------------
+Notes:
+
+> This code is using a relative image filepath. This will only work as long as the location it is from always exists, and the resource it is part of is running.
+    To ensure it does not break, it is highly encouraged to move images into your local resource and reference them there.
+--]]-------------------------------------------------
+
+GUIEditor = {
+    staticimage = {},
+    edit = {},
+    label = {},
+}
+GUIEditor.label[1] = guiCreateLabel(539, 380, 206, 19, "sd", false)
+guiLabelSetColor(GUIEditor.label[1], 0, 0, 0)
+
+
+GUIEditor.label[2] = guiCreateLabel(539, 433, 206, 19, "sd", false)
+guiLabelSetColor(GUIEditor.label[2], 0, 0, 0)
+
+
+GUIEditor.edit[1] = guiCreateEdit(533, 373, 219, 35, "", false)
+
+
+GUIEditor.edit[2] = guiCreateEdit(533, 426, 219, 35, "", false)
+
+
+GUIEditor.staticimage[1] = guiCreateStaticImage(329, 376, 173, 26, ":guied/images/NEG_login/your_username_label.png", false)
+
+
+GUIEditor.staticimage[2] = guiCreateStaticImage(329, 429, 175, 28, ":guied/images/NEG_login/your_password_label.png", false)
+
+
+GUIEditor.staticimage[3] = guiCreateStaticImage(532, 372, 220, 36, ":guied/images/NEG_login/edit_field.png", false)
+
+
+GUIEditor.staticimage[4] = guiCreateStaticImage(532, 425, 220, 36, ":guied/images/NEG_login/edit_field.png", false)
+
+
+GUIEditor.staticimage[5] = guiCreateStaticImage(767, 223, 3, 421, ":guied/images/NEG_login/color_line.png", false)
+
+
+GUIEditor.staticimage[6] = guiCreateStaticImage(897, 453, 376, 191, ":guied/images/NEG_login/hydra_logo.png", false)
+
+
+GUIEditor.staticimage[7] = guiCreateStaticImage(792, 362, 261, 27, ":guied/images/NEG_login/new_password_label.png", false)
+
+
+GUIEditor.staticimage[8] = guiCreateStaticImage(792, 399, 192, 43, ":guied/images/NEG_login/forget_password_button.png", false)
+
+
+GUIEditor.staticimage[9] = guiCreateStaticImage(399, 579, 26, 26, ":guied/images/NEG_login/tick_ticked.png", false)

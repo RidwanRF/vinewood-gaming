@@ -1,0 +1,35 @@
+<meta>
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <!-- Client exports -->
+    <export function="centerWindow" type="client" />
+    <export function="isVehicleOnRoof" type="client" />
+    <export function="RGBToHex" type="client" />
+    <export function="getTableSize" type="client" />
+    <export function="getTableCopy" type="client" />
+    <export function="isPedAiming" type="client" />
+    <export function="getPlayerFromNamePart" type="client" />
+    <export function="convertNumber" type="client" />
+    <export function="randomString" type="client" />
+    <export function="getPlayersFromOccupation" type="client" />
+    <export function="getPlayersFromGroup" type="client" />
+    <export function="mathNumber" type="client" />
+    <export function="secondsToTimeString" type="client" />
+    <export function="timestampToDate" type="client" />
+    <export function="getPlayChatZone" type="client" />
+    <!-- Server exports -->
+    <export function="isVehicleOnRoof" type="server" />
+    <export function="RGBToHex" type="server" />
+    <export function="getTableSize" type="server" />
+    <export function="getTableCopy" type="server" />
+    <export function="isPedAiming" type="server" />
+    <export function="getPlayerFromNamePart" type="server" />
+    <export function="convertNumber" type="server" />
+    <export function="randomString" type="server" />
+    <export function="getPlayersFromOccupation" type="server" />
+    <export function="getPlayersFromGroup" type="server" />
+    <export function="secondsToTimeString" type="server" />
+    <export function="timestampToDate" type="server" />
+    <export function="getPlayChatZone" type="server" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

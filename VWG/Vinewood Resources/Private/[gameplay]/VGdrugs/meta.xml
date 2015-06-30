@@ -1,0 +1,29 @@
+<meta>
+    <!-- Core-->
+    <script src="client.luac" type="client" />
+    <script src="server.lua" type="server" />
+    <script src="drugTables.luac" type="client" />
+    <!-- Plantation-->
+    <script src="plantation/plantation_c.luac" type="client" />
+    <script src="plantation/plantation_s.lua" type="server" />
+    <!-- Mushrooms-->
+    <script src="mushrooms/mushrooms_c.luac" type="client" />
+    <script src="mushrooms/mushrooms_s.lua" type="server" />
+    <!-- Drug lab-->
+    <script src="lab/lab_c.luac" type="client" />
+    <script src="lab/lab_map.luac" type="client" />
+    <script src="lab/lab_s.lua" type="server" />
+    <!-- Effects-->
+    <script src="effects/effects_c.luac" type="client" />
+    <script src="effects/effects_s.lua" type="server" />
+    <file src="imgs/seed.png" />
+    <file src="imgs/oilBottle.png" />
+    <file src="imgs/marijuanaBag.png" />
+    <file src="imgs/marijuanaLeaf.png" />
+    <file src="imgs/cocaLeaf.png" />
+    <file src="imgs/opiumPoppy.png" />
+    <file src="imgs/mushroom.png" />
+    <file src="mushrooms/mushroom.dff" />
+    <file src="mushrooms/mushroom.txd" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

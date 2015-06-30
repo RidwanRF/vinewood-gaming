@@ -1,0 +1,14 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <script src="jobs.luac" type="client" />
+    <script src="server.lua" type="server" />
+    <file src="imgs/blue.png" />
+    <file src="imgs/lightblue.png" />
+    <file src="imgs/yellow.png" />
+    <file src="imgs/red.png" />
+    <file src="imgs/jobIcon.png" />
+    <file src="imgs/blueSkin.png" />
+    <file src="imgs/lightblueSkin.png" />
+    <file src="imgs/yellowSkin.png" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

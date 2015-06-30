@@ -1,0 +1,41 @@
+givePlayerMoney = function( ... )
+    return exports.VGplayers:givePlayerCash( ... )
+end
+
+takePlayerMoney = function( ... )
+    return exports.VGplayers:givePlayerCash( ... )
+end
+
+givePedWeapon = function( ... )
+    return exports.VGweapons:givePlayerWeapon( ... )
+end
+
+showMessageDX = function( ... )
+    return exports.VGdx:showMessageDX( ... )
+end
+
+showHudMessageDX = function( ... )
+    return exports.VGdx:showHudMessageDX( ... )
+end
+
+isPlayerLoggedIn = function( ... )
+    return exports.VGaccounts:isPlayerLoggedIn( ... )
+end
+
+getPlayerAccountName = function( ... )
+    return exports.VGaccounts:getPlayerAccountName( ... )
+end 
+
+getPlayerAccountID = function( ... )
+    return exports.VGaccounts:getPlayerAccountID( ... )
+end
+
+getPlayerFromNamePart = function( ... )
+    return exports.VGplayers:getPlayerFromNamePart( ... )
+end
+
+empty = function( var )
+    if not ( var ) or ( var == 0 ) then return true end
+
+    return ( string.match( var, "^%s*$" ) ) and true or false
+end

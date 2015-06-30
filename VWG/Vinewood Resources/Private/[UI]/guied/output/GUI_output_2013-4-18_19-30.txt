@@ -1,0 +1,19 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()    
+    end
+)
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawRectangle(122, 516, 172, 143, tocolor(0, 0, 0, 59), false)
+        dxDrawRectangle(126, 524, 163, 131, tocolor(0, 0, 0, 135), false)
+        dxDrawText("Furniture Controller", 127, 511, 278, 529, tocolor(255, 255, 255, 255), 1.20, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawImage(188, 580, 31, 26, ":guied/1.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(236, 580, 31, 26, ":guied/1.png", 180, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(212, 610, 31, 26, ":guied/1.png", 270, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(212, 551, 31, 26, ":guied/1.png", 90, 0, 0, tocolor(255, 255, 255, 118), true)
+        dxDrawImage(138, 561, 33, 25, ":guied/2.png", 90, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(137, 599, 33, 25, ":guied/2.png", 270, 0, 0, tocolor(255, 255, 255, 255), true)
+    end
+)

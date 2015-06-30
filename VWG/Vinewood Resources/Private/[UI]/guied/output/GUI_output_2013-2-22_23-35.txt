@@ -1,0 +1,10 @@
+
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawRectangle(532, 335, 220, 28, tocolor(0, 0, 0, 100), false)
+        dxDrawRectangle(535, 337, 215, 24, tocolor(255, 3, 3, 100), false)
+        dxDrawText("Wrong login details!", 564, 341, 748, 362, tocolor(255, 255, 255, 255), 1, "default", "left", "top", false, false, false, false, false)
+        dxDrawImage(534, 337, 29, 26, ":guied/images/sign.png", 0, 0, 0, tocolor(255, 255, 255, 255), false)
+    end
+)

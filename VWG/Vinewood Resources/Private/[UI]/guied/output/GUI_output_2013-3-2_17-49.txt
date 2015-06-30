@@ -1,0 +1,19 @@
+GUIEditor = {
+    tab = {},
+    edit = {},
+    window = {},
+    gridlist = {},
+    checkbox = {},
+    tabpanel = {},
+}
+GUIEditor.window[1] = guiCreateWindow(459, 306, 637, 376, "Network of Entertainment and Gaming", false)
+guiWindowSetSizable(GUIEditor.window[1], false)
+
+GUIEditor.tabpanel[3] = guiCreateTabPanel(9, 21, 619, 346, false, GUIEditor.window[1])
+
+GUIEditor.tab[3] = guiCreateTab("Tab", GUIEditor.tabpanel[3])
+
+GUIEditor.gridlist[2] = guiCreateGridList(2, 1, 616, 292, false, GUIEditor.tab[3])
+GUIEditor.edit[2] = guiCreateEdit(1, 292, 491, 29, "", false, GUIEditor.tab[3])
+GUIEditor.checkbox[2] = guiCreateCheckBox(496, 299, 122, 15, "Enable output", true, false, GUIEditor.tab[3])
+guiSetFont(GUIEditor.checkbox[2], "default-bold-small")

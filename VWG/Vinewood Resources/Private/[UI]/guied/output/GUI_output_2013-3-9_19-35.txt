@@ -1,0 +1,19 @@
+
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawRectangle(441, 261, 653, 91, tocolor(0, 0, 0, 145), true)
+        dxDrawRectangle(1251, 564, 0, 0, tocolor(0, 0, 0, 210), true)
+        dxDrawText("Mark", 642, 597, 708, 628, tocolor(255, 255, 255, 255), 1, "pricedown", "left", "top", false, false, true, false, false)
+        dxDrawLine(328, 237, 1092, 237, tocolor(255, 255, 255, 255), 1, true)
+        dxDrawText("Your Vehicles", 328, 176, 832, 234, tocolor(255, 255, 255, 255), 2, "bankgothic", "left", "top", false, false, true, false, false)
+        dxDrawRectangle(325, 261, 109, 91, tocolor(0, 0, 0, 145), true)
+        dxDrawText("Scroll with your mouse wheel to move up or down!", 328, 242, 894, 261, tocolor(255, 255, 255, 255), 1, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawText("Vehicle: Infernus", 443, 263, 673, 279, tocolor(255, 255, 255, 255), 1, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawText("Bought Price: $100,000", 443, 280, 673, 296, tocolor(255, 255, 255, 255), 1, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawText("Health: 60%", 443, 297, 673, 313, tocolor(255, 255, 255, 255), 1, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawText("Fuel: 34%", 443, 314, 673, 330, tocolor(255, 255, 255, 255), 1, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawText("Location: Los Santos Market", 443, 332, 673, 348, tocolor(255, 255, 255, 255), 1, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawRectangle(976, 264, 113, 85, tocolor(0, 0, 0, 210), true)
+    end
+)

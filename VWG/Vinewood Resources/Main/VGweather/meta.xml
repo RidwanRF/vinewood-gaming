@@ -1,0 +1,5 @@
+<meta>
+    <info author="Psydomin" name="Weather System" version="1.0" type="script"/>
+    <script src="server.lua" type="server"/>
+
+</meta>

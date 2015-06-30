@@ -1,0 +1,31 @@
+<!--
+	Account System by UniOn aka Dennis (C)
+	Do not use anything in ths resource without permission of the developer;
+-->
+<meta>
+    <info author="Dennis" version="1.0.0" type="script" name="Account system" description="Account system resource" />
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <!-- Serverside exports -->
+    <export function="loginPlayer" type="server" />
+    <export function="logoutPlayer" type="server" />
+    <export function="createAccount" type="server" />
+    <export function="deleteAccount" type="server" />
+    <export function="isPlayerLoggedIn" type="server" />
+    <export function="getPlayerAccountID" type="server" />
+    <export function="getPlayerAccountName" type="server" />
+    <export function="getPlayerAccountData" type="server" />
+    <export function="getPlayerFromAcountName" type="server" />
+    <export function="setPlayerAccountData" type="server" />
+    <export function="setAccountPassword" type="server" />
+    <export function="isPlayerBanned" type="server" />
+    <export function="savePlayerData" type="server" />
+    <export function="isPlayerGuestStaff" type="server" />
+    <!-- Clientside exports -->
+    <export function="isPlayerLoggedIn" type="client" />
+    <export function="getPlayerAccountID" type="client" />
+    <export function="getPlayerAccountName" type="client" />
+    <export function="getPlayerAccountData" type="client" />
+    <export function="getPlayerFromAcountName" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

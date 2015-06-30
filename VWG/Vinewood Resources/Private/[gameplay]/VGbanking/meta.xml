@@ -1,0 +1,14 @@
+<meta>
+    <script src="ATMS.luac" type="client" />
+    <script src="client.luac" type="client" />
+    <script src="GUI/edits.luac" type="client" />
+    <script src="GUI/client.luac" type="client" />
+    <script src="server.lua" type="server" />
+    <file src="GUI/images/image1.png" />
+    <file src="GUI/images/image2.png" />
+    <file src="GUI/images/image3.png" />
+    <file src="GUI/images/image4.png" />
+    <file src="GUI/images/image5.png" />
+    <file src="GUI/images/image6.png" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

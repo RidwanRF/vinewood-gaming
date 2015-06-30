@@ -1,0 +1,32 @@
+--[[-------------------------------------------------
+Notes:
+
+> This code is using a relative image filepath. This will only work as long as the location it is from always exists, and the resource it is part of is running.
+    To ensure it does not break, it is highly encouraged to move images into your local resource and reference them there.
+--]]-------------------------------------------------
+
+GUIEditor = {
+    button = {},
+    staticimage = {},
+    window = {},
+    checkbox = {},
+    label = {},
+    edit = {},
+}
+GUIEditor.window[1] = guiCreateWindow(537, 228, 403, 354, "Network of Entertainment and Gaming", false)
+guiWindowSetSizable(GUIEditor.window[1], false)
+
+GUIEditor.staticimage[1] = guiCreateStaticImage(62, 27, 286, 133, ":guied/images/lgo.png", false, GUIEditor.window[1])
+GUIEditor.label[1] = guiCreateLabel(34, 161, 326, 20, "Username:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[1], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[1], "center", false)
+GUIEditor.edit[1] = guiCreateEdit(73, 179, 263, 23, "", false, GUIEditor.window[1])
+GUIEditor.label[2] = guiCreateLabel(34, 216, 326, 20, "Password:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[2], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[2], "center", false)
+GUIEditor.edit[2] = guiCreateEdit(72, 234, 263, 23, "", false, GUIEditor.window[1])
+GUIEditor.button[1] = guiCreateButton(73, 317, 262, 23, "New here? Create a new account!", false, GUIEditor.window[1])
+GUIEditor.button[2] = guiCreateButton(72, 290, 133, 23, "Sign in!", false, GUIEditor.window[1])
+GUIEditor.checkbox[1] = guiCreateCheckBox(150, 265, 106, 15, "Remember me", false, false, GUIEditor.window[1])
+guiSetFont(GUIEditor.checkbox[1], "default-bold-small")
+GUIEditor.button[4] = guiCreateButton(207, 290, 130, 23, "Forgot password?", false, GUIEditor.window[1])

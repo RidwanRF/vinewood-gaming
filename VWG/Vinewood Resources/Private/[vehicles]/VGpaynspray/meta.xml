@@ -1,0 +1,8 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <script src="server.lua" type="server" />
+    <file src="shader/shader.fx" type="client" />
+    <file src="carwash.mp3" type="client" />
+    <export function="setVehicleDirtEnabled" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

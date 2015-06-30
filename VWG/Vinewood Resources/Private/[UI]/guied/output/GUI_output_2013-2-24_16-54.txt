@@ -1,0 +1,114 @@
+--[[-------------------------------------------------
+Notes:
+
+> This code is using a relative image filepath. This will only work as long as the location it is from always exists, and the resource it is part of is running.
+    To ensure it does not break, it is highly encouraged to move images into your local resource and reference them there.
+--]]-------------------------------------------------
+
+GUIEditor = {
+    staticimage = {},
+    edit = {},
+    label = {},
+}
+GUIEditor.label[1] = guiCreateLabel(539, 433, 206, 19, "sd", false)
+guiLabelSetColor(GUIEditor.label[1], 0, 0, 0)
+
+
+GUIEditor.label[2] = guiCreateLabel(542, 383, 211, 15, "test", false)
+guiLabelSetColor(GUIEditor.label[2], 0, 0, 0)
+
+
+GUIEditor.edit[1] = guiCreateEdit(533, 426, 219, 35, "", false)
+
+
+GUIEditor.edit[2] = guiCreateEdit(535, 380, 214, 21, "test", false)
+
+
+GUIEditor.staticimage[1] = guiCreateStaticImage(329, 376, 173, 26, ":guied/images/NEG_login/your_username_label.png", false)
+
+
+GUIEditor.staticimage[2] = guiCreateStaticImage(329, 429, 175, 28, ":guied/images/NEG_login/your_password_label.png", false)
+
+
+GUIEditor.staticimage[3] = guiCreateStaticImage(532, 372, 220, 36, ":guied/images/NEG_login/edit_field.png", false)
+
+
+GUIEditor.staticimage[4] = guiCreateStaticImage(532, 425, 220, 36, ":guied/images/NEG_login/edit_field.png", false)
+
+
+GUIEditor.staticimage[5] = guiCreateStaticImage(767, 223, 3, 421, ":guied/images/NEG_login/color_line.png", false)
+
+
+GUIEditor.staticimage[6] = guiCreateStaticImage(897, 453, 376, 191, ":guied/images/NEG_login/hydra_logo.png", false)
+
+
+GUIEditor.staticimage[7] = guiCreateStaticImage(792, 223, 320, 60, ":guied/images/NEG_login/register_label.png", false)
+
+
+GUIEditor.staticimage[8] = guiCreateStaticImage(792, 300, 191, 44, ":guied/images/NEG_login/create_account_button.png", false)
+
+
+GUIEditor.staticimage[9] = guiCreateStaticImage(792, 362, 261, 27, ":guied/images/NEG_login/new_password_label.png", false)
+
+
+GUIEditor.staticimage[10] = guiCreateStaticImage(792, 399, 192, 43, ":guied/images/NEG_login/forget_password_button.png", false)
+
+
+GUIEditor.staticimage[11] = guiCreateStaticImage(531, 464, 26, 26, ":guied/images/NEG_login/tick_ticked.png", false)
+
+
+GUIEditor.staticimage[12] = guiCreateStaticImage(532, 490, 26, 26, ":guied/images/NEG_login/tick_ticked.png", false)
+
+
+GUIEditor.staticimage[13] = guiCreateStaticImage(558, 467, 149, 18, ":guied/images/NEG_login/remember_username_label.png", false)
+
+
+GUIEditor.staticimage[14] = guiCreateStaticImage(558, 495, 148, 18, ":guied/images/NEG_login/remember_password_label.png", false)
+
+
+GUIEditor.staticimage[15] = guiCreateStaticImage(531, 526, 126, 43, ":guied/images/NEG_login/sign_in_button.png", false)
+
+
+GUIEditor.staticimage[16] = guiCreateStaticImage(329, 376, 173, 26, ":guied/images/NEG_login/your_username_label.png", false)
+
+
+GUIEditor.staticimage[17] = guiCreateStaticImage(329, 429, 175, 28, ":guied/images/NEG_login/your_password_label.png", false)
+
+
+GUIEditor.staticimage[18] = guiCreateStaticImage(532, 372, 220, 36, ":guied/images/NEG_login/edit_field.png", false)
+
+
+GUIEditor.staticimage[19] = guiCreateStaticImage(532, 425, 220, 36, ":guied/images/NEG_login/edit_field.png", false)
+
+
+GUIEditor.staticimage[20] = guiCreateStaticImage(767, 223, 3, 421, ":guied/images/NEG_login/color_line.png", false)
+
+
+GUIEditor.staticimage[21] = guiCreateStaticImage(897, 453, 376, 191, ":guied/images/NEG_login/hydra_logo.png", false)
+
+
+GUIEditor.staticimage[22] = guiCreateStaticImage(792, 223, 320, 60, ":guied/images/NEG_login/register_label.png", false)
+
+
+GUIEditor.staticimage[23] = guiCreateStaticImage(792, 300, 191, 44, ":guied/images/NEG_login/create_account_button.png", false)
+
+
+GUIEditor.staticimage[24] = guiCreateStaticImage(792, 362, 261, 27, ":guied/images/NEG_login/new_password_label.png", false)
+
+
+GUIEditor.staticimage[25] = guiCreateStaticImage(792, 399, 192, 43, ":guied/images/NEG_login/forget_password_button.png", false)
+
+
+GUIEditor.staticimage[26] = guiCreateStaticImage(531, 464, 26, 26, ":guied/images/NEG_login/tick_ticked.png", false)
+
+
+GUIEditor.staticimage[27] = guiCreateStaticImage(532, 490, 26, 26, ":guied/images/NEG_login/tick_ticked.png", false)
+
+
+GUIEditor.staticimage[28] = guiCreateStaticImage(558, 467, 149, 18, ":guied/images/NEG_login/remember_username_label.png", false)
+
+
+GUIEditor.staticimage[29] = guiCreateStaticImage(558, 495, 148, 18, ":guied/images/NEG_login/remember_password_label.png", false)
+
+
+GUIEditor.staticimage[30] = guiCreateStaticImage(531, 526, 126, 43, ":guied/images/NEG_login/sign_in_button.png", false)

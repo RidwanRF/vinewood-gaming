@@ -1,0 +1,13 @@
+<meta>
+    <script src="store/client.luac" type="client" />
+    
+    <file src="images/AE.png" />
+    <file src="images/coins.png" />
+    <file src="images/money.png" />
+    <file src="images/PP.png" />
+    <file src="images/VI.png" />
+    <file src="images/MC.png" />
+    
+    <export function="showPlayerDonatorsWindow" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

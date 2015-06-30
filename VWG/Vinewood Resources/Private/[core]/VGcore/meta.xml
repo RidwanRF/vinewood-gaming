@@ -1,0 +1,43 @@
+<meta>
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000" />
+    <!-- Main files -->
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <!-- The GUI Things -->
+    <script src="GUI/edits.luac" type="client" />
+    <script src="GUI/login.luac" type="client" />
+    <script src="GUI/warning.luac" type="client" />
+    <script src="GUI/password.luac" type="client" />
+    <!-- The Images -->
+    <file src="images/sign.png" />
+    <file src="images/color_line.png" />
+    <file src="images/create_account_button.png" />
+    <file src="images/create_account_button_clicked.png" />
+    <file src="images/edit_field.png" />
+    <file src="images/forget_password_button_clicked.png" />
+    <file src="images/forget_password_button.png" />
+    <file src="images/hydra_logo.png" />
+    <file src="images/new_password_label.png" />
+    <file src="images/register_label.png" />
+    <file src="images/remember_password_label.png" />
+    <file src="images/remember_username_label.png" />
+    <file src="images/sign_in_button.png" />
+    <file src="images/sign_in_button_clicked.png" />
+    <file src="images/tick_ticked.png" />
+    <file src="images/tick_unticked.png" />
+    <file src="images/your_password_label.png" />
+    <file src="images/your_username_label.png" />
+    <file src="images/back_to_login_button.png" />
+    <file src="images/back_to_login_button_clicked.png" />
+    <file src="images/email_label.png" />
+    <file src="images/las_venturas_label.png" />
+    <file src="images/los_santos_label.png" />
+    <file src="images/password_repeat_label.png" />
+    <file src="images/register_button.png" />
+    <file src="images/register_button_clicked.png" />
+    <file src="images/san_fierro_label.png" />
+    <file src="images/select_spawn_label.png" />
+    <file src="images/back_to_login_label.png" />
+    <file src="images/request_password_button.png" />
+    <file src="images/request_password_button_clicked.png" />
+</meta>

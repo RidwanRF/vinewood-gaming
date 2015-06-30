@@ -1,0 +1,23 @@
+<!--
+	Account System by UniOn aka Dennis (C)
+	Do not use anything in ths resource without permission of the developer;
+-->
+<meta>
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <!-- Serverside exports -->
+    <export function="getPlayerWantedPoints" type="server" />
+    <export function="setPlayerWantedPoints" type="server" />
+    <export function="givePlayerWantedPoints" type="server" />
+    <export function="takePlayerWantedPoints" type="server" />
+    <export function="givePlayerCash" type="server" />
+    <export function="takePlayerCash" type="server" />
+    <!-- Clientside exports -->
+    <export function="getPlayerWantedPoints" type="client" />
+    <export function="setPlayerWantedPoints" type="client" />
+    <export function="givePlayerWantedPoints" type="client" />
+    <export function="takePlayerWantedPoints" type="client" />
+    <export function="setClientElementInterior" type="client" />
+    <export function="setClientElementDimension" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

@@ -1,0 +1,5 @@
+<meta>
+    <script src="stinger_s.lua" type="server" />
+    <script src="stinger_c.luac" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

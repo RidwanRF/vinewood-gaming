@@ -1,0 +1,11 @@
+<meta>
+  <file src="dx" />
+  <file src="client" />
+  <file src="mandatory_client" />
+
+  <script src="server.lua" type="server" />
+  <script src="client.luac" type="client" />
+  
+  <export function="load" type="server" />
+  <export function="load" type="client" />
+</meta>

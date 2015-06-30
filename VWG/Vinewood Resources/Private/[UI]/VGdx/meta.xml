@@ -1,0 +1,15 @@
+<meta>
+    <script src="hud.luac" type="client" />
+    <script src="top.luac" type="client" />
+	
+    <script src="server.lua" type="server" />
+	
+    <file src="messagebox.png" type="client" />
+	
+    <export function="showHudMessageDX" type="client" />
+    <export function="showHudMessageDX" type="server" />
+    <export function="showMessageDX" type="client" />
+    <export function="showMessageDX" type="server" />
+	
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

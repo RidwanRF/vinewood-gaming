@@ -1,0 +1,21 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <script src="server.lua" type="server" />
+    <file src="images/phone.png" />
+    <file src="backgrounds/background0.png" />
+    <file src="backgrounds/background1.png" />
+    <file src="icons/messages.png" />
+    <file src="icons/calculator.png" />
+    <file src="icons/contacts.png" />
+    <file src="icons/maps.png" />
+    <file src="icons/vsettings.png" />
+    <file src="icons/mods.png" />
+    <file src="icons/calendar.png" />
+    <file src="icons/notes.png" />
+    <file src="icons/news.png" />
+    <file src="icons/phone.png" />
+    <file src="icons/settings.png" />
+    <script src="apps/vsettings.luac" type="client" />
+    <script src="apps/mods.luac" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

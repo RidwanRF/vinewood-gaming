@@ -1,0 +1,19 @@
+<meta>
+    <script src="shared.lua" type="client" />
+    <script src="shared.lua" type="server" />
+
+    <script src="tables/atms.luac" type="client" />
+    <script src="tables/foodstores.luac" type="client" />
+    <script src="tables/fuelstations.luac" type="client" />
+    <script src="tables/gates.lua" type="server" />
+    <script src="tables/interiors.luac" type="client" />
+    <script src="tables/jobs.luac" type="client" />
+    <script src="tables/modshops.lua" type="server" />
+    <script src="tables/paynspray.lua" type="server" />
+    <script src="tables/pickups.lua" type="server" />
+	
+    <export function="getTable" type="client" />
+    <export function="getTable" type="server" />
+
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

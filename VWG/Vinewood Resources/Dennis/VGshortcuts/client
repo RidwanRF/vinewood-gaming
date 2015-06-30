@@ -1,0 +1,55 @@
+enableBlur = function()
+    return exports.VGblur:setBlurEnabled()
+end
+
+disableBlur = function()
+    return exports.VGblur:setBlurDisabled()
+end
+
+stopScreenRender = function()
+    return exports.VGdrawing:dxStopScreenRendering()
+end
+
+getPlayerWantedPoints = function( ... )
+    return exports.VGplayers:getPlayerWantedPoints( ... )
+end
+
+setPlayerWantedPoints = function( ... )
+    return exports.VGplayers:setPlayerWantedPoints( ... )
+end
+
+givePlayerWantedPoints = function( ... )
+    return exports.VGplayers:givePlayerWantedPoints( ... )
+end
+
+takePlayerWantedPoints = function( ... )
+    return exports.VGplayers:takePlayerWantedPoints( ... )
+end
+
+isPlayerLaw = function( ... )
+    return exports.VGlaw:isPlayerLaw( ... )
+end
+
+centerWindow = function( ... )
+    return exports.VGutils:centerWindow( ... )
+end
+
+convertNumber = function( ... )
+    return exports.VGutils:convertNumber( ... )
+end
+
+randomString = function( ... )
+    return exports.VGutils:randomString( ... )
+end
+
+getTableSize = function( ... )
+    return exports.VGutils:getTableSize( ... )
+end
+
+copyTable = function( ... )
+    return exports.VGutils:getTableCopy( ... )
+end
+
+getPlayerData = function( ... )
+    return exports.VGuserdata:getPlayerData( ... )
+end

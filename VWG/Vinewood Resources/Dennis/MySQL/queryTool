@@ -1,0 +1,99 @@
+-- The MySQL key
+local key = '4A^Ppk2N7q9gTq^YERGBj^xWQGuJgj'
+
+-- Table with query data
+local qData = {}
+
+-- Set function to set the connection type
+function MySQL_init()
+    local connections = exports.MySQL:getConnection( key, "all" )
+
+    for cName, connection in pairs( connections ) do
+        if not ( isElement( connection.elm ) ) then
+            outputDebugString( "Failed connecting to MySQL - Database: " .. cName, 1 )
+        end
+    end
+end
+
+-- Query callback function
+function queryCallBack( qh, rand )
+    if not ( qh ) then return end
+
+    local res, rows, id = dbPoll( qh, 0 )
+
+    if ( res == nil ) then dbFree( qh ) end
+
+    local tbl = qData[ rand ] or {}
+    qData[ rand ] = nil
+
+    if not ( type( tbl.callBack ) == 'function' ) then return end
+
+    tbl.last_inserted_id = id or nil
+    tbl.num_affected_rows = rows or nil
+
+    tbl.callBack( res, tbl )
+end
+
+-- Query function
+function query( cName, ... )
+    local conn = exports.MySQL:getConnection( key, cName )
+
+    if not ( conn ) or not ( isElement( conn.elm ) ) then outputDebugString( "Query failed, no connection.", 1 ) return false end
+
+    local args = { ... }
+
+    if ( args[1] ) and ( type( args[1] ) == 'function' ) then args = { args } end
+
+    local res = false
+    
+    for _, k in ipairs( args ) do
+        repeat
+            if not ( type( k[1] ) == 'function' ) or ( #k < 3 ) then break end
+
+            local rand = md5( getTickCount() .. tostring( k ) .. exports.VGutils:randomString( 20 ) )
+
+            qData[ rand ] = k[2] or {}
+
+            qData[ rand ].callBack = k[1]
+
+            res = dbQuery( queryCallBack, { rand }, conn.elm, k[3], unpack( k, 4 ) )
+
+            break
+        until true
+    end
+
+    if ( #args == 0 ) or ( #args > 1 ) then
+        return true
+    else
+        return res
+    end
+end
+
+-- Exec function
+function exec( cName, ... )
+    local conn = exports.MySQL:getConnection( key, cName )
+
+    if not ( conn ) or not ( isElement( conn.elm ) ) then outputDebugString( "Query failed, no connection.", 1 ) return false end
+
+    local args = { ... }
+
+    if ( args[1] ) and ( type( args[1] ) == 'string' ) then args = { args } end
+
+    local res = false
+
+    for _, k in ipairs( args ) do
+        repeat
+            if ( #k < 1 ) then break end
+            
+            res = dbExec( conn.elm, unpack( k ) )
+
+            break
+        until true
+    end
+
+    if ( #args == 0 ) or ( #args > 1 ) then
+        return true
+    else
+        return res
+    end
+end

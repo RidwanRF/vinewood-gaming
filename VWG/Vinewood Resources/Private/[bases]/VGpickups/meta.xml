@@ -1,0 +1,5 @@
+<meta>
+	<info author="Dennis" version="1.0" description="Pickups" type="script" />
+
+	<script src="server.lua" type="server" />
+</meta>

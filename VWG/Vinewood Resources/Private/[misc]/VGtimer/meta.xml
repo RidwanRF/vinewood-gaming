@@ -1,0 +1,10 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <file src="background.png" type="client" />
+    <export function="createMissionTimer" type="client" />
+    <export function="destroyMissionTimer" type="client" />
+    <export function="getMissionTimerTime" type="client" />
+    <export function="setMissionTimerTime" type="client" />
+    <export function="setMissionTimerFrozen" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

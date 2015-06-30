@@ -1,0 +1,9 @@
+<meta>
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <export function="updatePlayerWeaponTable" type="server" />
+    <export function="savePlayerWeaponTable" type="server" />
+    <export function="restorePlayerWeapons" type="server" />
+    <export function="givePlayerWeapon" type="server" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

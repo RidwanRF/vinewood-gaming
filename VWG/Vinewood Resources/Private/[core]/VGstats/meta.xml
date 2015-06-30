@@ -1,0 +1,7 @@
+<meta>
+	<script src="server.lua" typ="server"/>
+	
+	<export function="updatePlayerStat" type="server"/>
+	<export function="getPlayerStat" type="server"/>
+	<export function="getPlayerStatTable" type="server"/>
+</meta>

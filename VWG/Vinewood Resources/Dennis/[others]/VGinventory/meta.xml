@@ -1,0 +1,29 @@
+<meta>
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <script src="GUI/GUI.luac" type="client" />
+    <export function="givePlayerItem" type="server" />
+    <export function="takePlayerItem" type="server" />
+    <export function="getPlayerItems" type="client" />
+    <export function="getPlayerItems" type="server" />
+    <export function="getPlayerItemAmount" type="client" />
+    <export function="getPlayerItemAmount" type="server" />
+    <export function="showPlayerInventoryWindow" type="client" />
+    <file src="images/burger.png" />
+    <file src="images/coke.png" />
+    <file src="images/pizza.png" />
+    <file src="images/medic.png" />
+    <file src="images/beer.png" />
+    <file src="images/chicken.png" />
+    <file src="images/donut1.png" />
+    <file src="images/donut2.png" />
+    <file src="images/pie.png" />
+    <file src="images/salad.png" />
+    <file src="images/screwdriver.png" />
+    <file src="images/tools.png" />
+    <file src="images/wheel.png" />
+    <file src="images/wine.png" />
+    <file src="images/fuel.png" />
+    <file src="images/ice.png" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

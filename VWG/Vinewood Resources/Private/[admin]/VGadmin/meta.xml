@@ -1,0 +1,67 @@
+<meta>
+    <!--Server/Client-->
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    <script src="ACL.luac" type="client" />
+    <script src="countries.lua" type="server" />
+	
+    <!--Screenshots Module-->
+	<script src="Modules/Screenshots/server.lua" type="server" />
+    <script src="Modules/Screenshots/client.luac" type="client" />
+    
+    <!--Punishlog Module-->
+    <script src="Modules/Punishlog/server.lua" type="server" />
+    <script src="Modules/Punishlog/client.luac" type="client" />
+    
+    <!--Logins Module-->
+    <script src="Modules/Logins/server.lua" type="server" />
+	<script src="Modules/Logins/client.luac" type="client" />
+    
+    <!--ACL Management Module-->
+    <script src="Modules/ACLM/ACL_client.luac" type="client" />
+    <script src="Modules/ACLM/ACL_server.lua" type="server" />
+    <script src="Modules/ACLM/ACL_GUI.luac" type="client" />
+    <file src="Modules/ACLM/images/dot.png" />
+    <file src="Modules/ACLM/images/dropdown.png" />
+    <file src="Modules/ACLM/images/empty.png" />
+    
+    <!--Resources Management Module-->
+    <script src="Modules/Resources/client.luac" type="client" />
+    <script src="Modules/Resources/server.lua" type="server" />
+
+    <!--Punishments Module-->
+    <script src="Modules/Punishments/client.lua" type="client" />
+    <script src="Modules/Punishments/server.lua" type="server" />
+
+    <!--Mute Module-->
+    <script src="Modules/Mute/server.lua" type="server" />
+    <script src="Modules/Mute/client.lua" type="client" />
+
+    <!--Jail Module-->
+    <script src="Modules/Jail/server.lua" type="server" />
+    <script src="Modules/Jail/client.lua" type="client" />
+    
+    <!--Warp Module-->
+    <script src="Modules/Warp/server.lua" type="server" />
+    
+    <!--Commands Module-->
+    <script src="Modules/Commands/server.lua" type="server" />
+    
+    <!--Spectates Module-->
+    <script src="Modules/Spectate/client.luac" type="client" />
+	
+    <!--Exports-->
+    <export function="isPlayerAdmin" type="server" />
+    <export function="isPlayerAdmin" type="client" />
+    <export function="isAdminOnDuty" type="server" />
+    <export function="isAdminOnDuty" type="client" />
+    <export function="getPlayerAdminRank" type="server" />
+    <export function="getPlayerAdminRank" type="client" />
+    <export function="getPlayerAdminRankName" type="server" />
+    <export function="getPlayerAdminRankName" type="client" />
+    <export function="isPlayerDeveloper" type="server" />
+    <export function="isPlayerEventManager" type="server" />
+    <export function="getOnlineAdmins" type="server" />
+
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

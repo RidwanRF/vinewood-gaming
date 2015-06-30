@@ -1,0 +1,50 @@
+sx, sy = guiGetScreenSize()
+
+function _F( var )
+    return var or false
+end
+
+dxDrawBorderedText = function( text, x, y, w, h, color, scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+    if not ( type( color ) == 'table' ) or not ( color[2] ) then _color = color color = {} color[1] = _color color[2] = tocolor ( 0, 0, 0, 255 ) end
+    
+    clip, wordBreak, postGUI, colorCoded, subPixelPositioning = _F( clip  ), _F( wordBreak  ), _F( postGUI  ), _F( colorCoded  ), _F( subPixelPositioning )
+    fRotation, fRotationCenterX, fRotationCenterY = fRotation or 0, fRotationCenterX or 0, fRotationCenterY or 0
+    
+    dxDrawText ( text, x - 1, y - 1, w - 1, h - 1, color[2], scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+    dxDrawText ( text, x + 1, y - 1, w + 1, h - 1, color[2], scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+    dxDrawText ( text, x - 1, y + 1, w - 1, h + 1, color[2], scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+    dxDrawText ( text, x + 1, y + 1, w + 1, h + 1, color[2], scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+    dxDrawText ( text, x - 1, y, w - 1, h, color[2], scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+    dxDrawText ( text, x + 1, y, w + 1, h, color[2], scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+    dxDrawText ( text, x, y - 1, w, h - 1, color[2], scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+    dxDrawText ( text, x, y + 1, w, h + 1, color[2], scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+    dxDrawText ( text, x, y, w, h, color[1], scale, font, alignX, alignY, clip, wordBreak, postGUI, colorCoded, subPixelPositioning, fRotation, fRotationCenterX, fRotationCenterY )
+end
+
+isDrawElementSelected = function ( minX, minY, maxX, maxY )
+    if ( isCursorShowing() ) then
+        local x, y = getCursorPosition()
+        if ( sx * x >= minX ) and ( sx * x <= ( minX + maxX ) ) and ( sy * y >= minY ) and ( sy*y <= ( minY + maxY ) ) then
+            return true
+        end
+        
+        return false
+    end
+end
+
+dxDrawBorderedRectangle = function ( x, y, w, h, color, postGUI, subPixelPositioning )
+    if not ( type( color ) == 'table' ) or not ( color[2] ) then _color = color color = {} color[1] = _color color[2] = tocolor ( 0, 0, 0, 255 ) end
+    
+    postGUI, subPixelPositioning = _F( postGUI ), _F( subPixelPositioning )
+    
+    dxDrawRectangle( x, y, w, h, color[1], postGUI, subPixelPositioning )
+    dxDrawLine( x, y, x + w, y, color[2], 1, postGUI )
+    dxDrawLine( x, y, x, y+h, color[2], 1, postGUI )
+    dxDrawLine( x, y + h, x + w, y + h, color[2], 1, postGUI )
+    dxDrawLine( x + w, y, x + w, y + h, color[2], 1, postGUI )
+end
+
+dxDrawImage3D = function ( x, y, z, w, h, m, c, r, ... )
+    local lx, ly, lz = x + w, y + h, ( z + tonumber( r or 0 ) ) or z
+    return dxDrawMaterialLine3D( x, y, z, lx, ly, lz, m, h, c or tocolor( 255, 255, 255, 255 ), ... )
+end

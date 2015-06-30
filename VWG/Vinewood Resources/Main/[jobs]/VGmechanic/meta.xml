@@ -1,0 +1,9 @@
+<meta>
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    <script src="mechanicMap.luac" type="client" />
+    <file src="imgs/wrench.png" />
+    <file src="imgs/stamp-paid.png"/>
+	<file src="imgs/close_button.png"/>
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

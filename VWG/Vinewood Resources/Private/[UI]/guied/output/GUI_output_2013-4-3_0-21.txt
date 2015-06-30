@@ -1,0 +1,22 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()    
+    end
+)
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawRectangle(141, 71, 385, 33, tocolor(0, 0, 0, 216), false)
+        dxDrawRectangle(143, 73, 381, 29, tocolor(120, 208, 106, 130), false)
+        dxDrawText("NEG Modshop", 140, 142, 519, 204, tocolor(255, 255, 255, 255), 2.00, "pricedown", "left", "top", false, false, true, false, false)
+        dxDrawText("Los Santos Modshop", 154, 177, 523, 206, tocolor(218, 143, 15, 216), 1.00, "pricedown", "right", "top", false, false, true, false, false)
+        dxDrawRectangle(141, 204, 385, 33, tocolor(0, 0, 0, 94), false)
+        dxDrawRectangle(143, 206, 381, 29, tocolor(0, 0, 0, 216), false)
+        dxDrawRectangle(141, 239, 385, 33, tocolor(0, 0, 0, 94), false)
+        dxDrawRectangle(143, 241, 381, 29, tocolor(0, 0, 0, 160), false)
+        dxDrawText("Wheels", 147, 206, 523, 234, tocolor(255, 255, 255, 255), 0.80, "bankgothic", "left", "center", false, false, true, false, false)
+        dxDrawText("Shopping card", 140, 17, 519, 79, tocolor(255, 255, 255, 255), 2.00, "pricedown", "left", "top", false, false, true, false, false)
+        dxDrawText("Total: $ 5,000", 147, 73, 523, 101, tocolor(255, 255, 255, 255), 0.80, "bankgothic", "left", "center", false, false, true, false, false)
+        dxDrawText("Wheels", 147, 243, 523, 271, tocolor(255, 255, 255, 255), 0.80, "bankgothic", "left", "center", false, false, true, false, false)
+    end
+)

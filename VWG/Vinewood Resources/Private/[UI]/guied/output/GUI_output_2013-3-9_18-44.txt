@@ -1,0 +1,11 @@
+
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawRectangle(0, 0, 1439, 899, tocolor(0, 1, 47, 255), true)
+        dxDrawRectangle(0, 747, 1439, 3, tocolor(0, 0, 0, 255), true)
+        dxDrawRectangle(0, 774, 1439, 8, tocolor(0, 0, 0, 255), true)
+        dxDrawRectangle(0, 143, 1439, 4, tocolor(157, 119, 1, 255), true)
+        dxDrawRectangle(0, 143, 1439, 3, tocolor(157, 119, 1, 255), true)
+    end
+)

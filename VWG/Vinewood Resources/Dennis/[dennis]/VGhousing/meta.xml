@@ -1,0 +1,15 @@
+<meta>
+    <!-- Shared files for either housing or housekeeping -->
+    <script src="shared.luac" type="shared" />
+    <!-- Files for the housing itself -->
+    <script src="Housing/server.lua" type="server" />
+    <script src="Housing/client.luac" type="client" />
+    <!-- Files for the housekeeping -->
+    <script src="Housekeeping/server.lua" type="server" />
+    <script src="Housekeeping/client.luac" type="client" />
+    <!-- The Exports (server) -->
+    <export function="addHouse" type="server" />
+    <export function="createHouse" type="server" />
+    <export function="showHouseBlips" type="server" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

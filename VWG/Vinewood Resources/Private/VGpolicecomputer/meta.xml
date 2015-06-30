@@ -1,0 +1,17 @@
+<meta>
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <script src="GUI/GUI.luac" type="client" />
+    <file src="GUI/sapd.png" />
+    <file src="GUI/back.png" />
+    <file src="GUI/pin_player.png" />
+    <file src="GUI/pin_players.png" />
+    <file src="GUI/refresh.png" />
+    <file src="GUI/Search.png" />
+    <file src="GUI/box_empty.png" />
+    <file src="GUI/box_clicked.png" />
+    <file src="GUI/unpin_all.png" />
+    <file src="GUI/details.png" />
+    <export function="showPoliceComputer" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

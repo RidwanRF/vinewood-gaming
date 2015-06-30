@@ -1,0 +1,40 @@
+--[[-------------------------------------------------
+Notes:
+
+> This code is using a relative image filepath. This will only work as long as the location it is from always exists, and the resource it is part of is running.
+    To ensure it does not break, it is highly encouraged to move images into your local resource and reference them there.
+--]]-------------------------------------------------
+
+GUIEditor = {
+    staticimage = {},
+}
+GUIEditor.staticimage[1] = guiCreateStaticImage(10, 10, 183, 123, ":guied/images/NEG_login/logo.png", false)
+
+
+GUIEditor.staticimage[2] = guiCreateStaticImage(850, 527, 441, 224, ":guied/images/NEG_login/hydra_visit_negmta.png", false)
+
+
+GUIEditor.staticimage[3] = guiCreateStaticImage(730, 246, 4, 421, ":guied/images/NEG_login/line.png", false)
+
+
+GUIEditor.staticimage[4] = guiCreateStaticImage(239, 400, 183, 23, ":guied/images/NEG_login/your_username.png", false)
+
+
+GUIEditor.staticimage[5] = guiCreateStaticImage(435, 395, 271, 33, ":guied/images/NEG_login/password.png", false)
+
+
+GUIEditor.staticimage[6] = guiCreateStaticImage(435, 470, 272, 33, ":guied/images/NEG_login/password.png", false)
+
+
+GUIEditor.staticimage[7] = guiCreateStaticImage(242, 476, 183, 23, ":guied/images/NEG_login/your_password.png", false)
+
+
+GUIEditor.staticimage[8] = guiCreateStaticImage(787, 313, 272, 72, ":guied/images/NEG_login/register_now.png", false)
+
+GUIEditor.staticimage[9] = guiCreateStaticImage(-7, 133, 274, 34, ":guied/images/NEG_login/request_new_password.png", false, GUIEditor.staticimage[8])
+
+
+GUIEditor.staticimage[10] = guiCreateStaticImage(787, 414, 183, 24, ":guied/images/NEG_login/your_password.png", false)
+
+
+GUIEditor.staticimage[11] = guiCreateStaticImage(790, 445, 199, 45, ":guied/images/NEG_login/forget_password.png", false)

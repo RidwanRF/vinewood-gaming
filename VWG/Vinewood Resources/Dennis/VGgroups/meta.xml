@@ -1,0 +1,7 @@
+<meta>
+	<script src="UI/client.lua" type="client"/>
+	
+	<file src="images/icon.png" type="client"/>
+	<file src="images/tick_ticked.png" type="client"/>
+	<file src="images/tick_unticked.png" type="client"/>
+</meta>

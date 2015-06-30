@@ -1,0 +1,8 @@
+<meta>
+	<file src="images/circle.png" type="client"/>
+	<file src="images/needle.png" type="client"/>
+	<file src="images/health.png" type="client"/>
+	<file src="images/fuel.png" type="client"/>
+	<file src="images/lock.png" type="client"/>
+	<file src="images/cruising.png" type="client"/>
+</meta>

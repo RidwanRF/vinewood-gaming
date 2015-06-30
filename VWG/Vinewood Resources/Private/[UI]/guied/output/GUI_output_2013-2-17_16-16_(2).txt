@@ -1,0 +1,28 @@
+--[[-------------------------------------------------
+Notes:
+
+> This code is using a relative image filepath. This will only work as long as the location it is from always exists, and the resource it is part of is running.
+    To ensure it does not break, it is highly encouraged to move images into your local resource and reference them there.
+--]]-------------------------------------------------
+
+GUIEditor = {
+    label = {},
+    button = {},
+    staticimage = {},
+    window = {},
+}
+GUIEditor.window[1] = guiCreateWindow(537, 232, 403, 318, "Network of Entertainment and Gaming", false)
+guiWindowSetSizable(GUIEditor.window[1], false)
+
+GUIEditor.staticimage[1] = guiCreateStaticImage(62, 27, 286, 133, ":guied/images/lgo.png", false, GUIEditor.window[1])
+GUIEditor.label[3] = guiCreateLabel(40, 220, 326, 20, "Click the 'return' button to login with another account!", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[3], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[3], "center", false)
+GUIEditor.label[4] = guiCreateLabel(56, 170, 290, 22, "Welcome back Dennis!", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[4], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[4], "center", false)
+GUIEditor.label[5] = guiCreateLabel(38, 189, 326, 20, "Your last visit was 1 days ago!", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[5], "default-bold-small")
+guiLabelSetHorizontalAlign(GUIEditor.label[5], "center", false)
+GUIEditor.button[4] = guiCreateButton(71, 252, 262, 23, "Join the game!", false, GUIEditor.window[1])
+GUIEditor.button[5] = guiCreateButton(71, 280, 262, 23, "Return to the login screen", false, GUIEditor.window[1])

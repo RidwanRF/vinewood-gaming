@@ -1,0 +1,9 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <!-- Client exports -->
+    <export function="dxDrawImage3D" type="client" />
+    <export function="dxStopScreenRendering" type="client" />
+    <export function="dxDrawBorderedText" type="client" />
+    <export function="dxDrawBorderedRectangle" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

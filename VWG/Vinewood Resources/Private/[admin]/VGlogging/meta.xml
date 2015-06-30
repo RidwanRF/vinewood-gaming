@@ -1,0 +1,6 @@
+<meta>
+	<script src="server.lua"/>
+	
+	<!-- The Exports -->
+	<export function="log"/>
+</meta>

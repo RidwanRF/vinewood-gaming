@@ -1,0 +1,16 @@
+<meta>
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <script src="GUI/GUI.luac" type="client" />
+    <file src="GUI\images\Automobile.png" />
+    <file src="GUI\images\Bike.png" />
+    <file src="GUI\images\BMX.png" />
+    <file src="GUI\images\Boat.png" />
+    <file src="GUI\images\Helicopter.png" />
+    <file src="GUI\images\Monster Truck.png" />
+    <file src="GUI\images\Plane.png" />
+    <file src="GUI\images\Quad.png" />
+    <export function="showPlayerVehicleWindow" type="client" />
+    <export function="savePlayerVehicles" type="server" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

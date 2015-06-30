@@ -1,0 +1,12 @@
+
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawRectangle(0, 0, 1440, 26, tocolor(0, 0, 0, 143), true)
+        dxDrawText("Hello there", 177, 4, 1344, 21, tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center", false, false, true, false, false)
+        dxDrawRectangle(0, 24, 1440, 26, tocolor(0, 0, 0, 143), true)
+        dxDrawRectangle(0, 48, 1440, 26, tocolor(0, 0, 0, 190), true)
+        dxDrawText("Hello there", 177, 29, 1344, 46, tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center", false, false, true, false, false)
+        dxDrawText("Hello there", 177, 53, 1344, 70, tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center", false, false, true, false, false)
+    end
+)

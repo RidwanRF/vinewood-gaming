@@ -1,0 +1,9 @@
+<meta>
+	<script src="server.lua" type="server"/>
+	
+	<export function="getPlayerForumUsername"/>
+	<export function="removePlayerForumConnection"/>
+	<export function="addPlayerForumConnection"/>
+	<export function="transferForumAccountCredits"/>
+	<export function="getConnection"/>
+</meta>

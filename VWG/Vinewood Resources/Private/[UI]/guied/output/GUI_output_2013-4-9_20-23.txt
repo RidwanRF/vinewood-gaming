@@ -1,0 +1,33 @@
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()    
+    end
+)
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawImage(728, 216, 141, 136, ":guied/a/coins.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(320, 127, 143, 127, ":guied/a/money.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawText("NEG's Donator Store", 334, 220, 845, 295, tocolor(255, 255, 255, 255), 2.00, "pricedown", "left", "top", false, false, true, false, false)
+        dxDrawImage(464, 189, 47, 40, ":guied/a/PP.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(513, 189, 48, 40, ":guied/a/VI.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(563, 189, 48, 40, ":guied/a/MC.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(614, 189, 48, 40, ":guied/a/AE.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawText("100 Credits", 664, 177, 962, 228, tocolor(235, 131, 19, 255), 2.20, "pricedown", "right", "top", false, false, true, false, false)
+        dxDrawRectangle(325, 300, 401, 51, tocolor(0, 0, 0, 145), true)
+        dxDrawRectangle(325, 355, 401, 51, tocolor(0, 0, 0, 145), true)
+        dxDrawText("10 hours VIP1", 332, 304, 633, 321, tocolor(255, 255, 255, 255), 1.00, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawText("10 hours VIP", 332, 360, 633, 377, tocolor(255, 255, 255, 255), 1.00, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawRectangle(635, 301, 89, 49, tocolor(0, 0, 0, 255), true)
+        dxDrawRectangle(636, 302, 87, 47, tocolor(10, 138, 16, 145), true)
+        dxDrawRectangle(635, 356, 89, 49, tocolor(0, 0, 0, 255), true)
+        dxDrawRectangle(636, 357, 87, 47, tocolor(10, 138, 16, 145), true)
+        dxDrawText("Buy1", 652, 301, 715, 330, tocolor(255, 255, 255, 255), 1.00, "bankgothic", "left", "top", false, false, true, false, false)
+        dxDrawText("Buy", 651, 357, 714, 386, tocolor(255, 255, 255, 255), 1.00, "bankgothic", "left", "top", false, false, true, false, false)
+        dxDrawText("10 hours VI\neg", 332, 375, 633, 402, tocolor(255, 255, 255, 255), 0.90, "clear", "left", "top", false, false, true, false, false)
+        dxDrawText("10 hours VI\neg1", 332, 321, 633, 348, tocolor(255, 255, 255, 255), 0.90, "clear", "left", "top", false, false, true, false, false)
+        dxDrawText("10 hours VIP", 729, 354, 962, 653, tocolor(255, 255, 255, 255), 1.00, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawText("10 Credits", 639, 383, 719, 394, tocolor(255, 255, 255, 255), 0.45, "bankgothic", "left", "top", false, false, true, false, false)
+        dxDrawText("10 Credits1", 639, 327, 719, 338, tocolor(255, 255, 255, 255), 0.45, "bankgothic", "left", "top", false, false, true, false, false)
+    end
+)

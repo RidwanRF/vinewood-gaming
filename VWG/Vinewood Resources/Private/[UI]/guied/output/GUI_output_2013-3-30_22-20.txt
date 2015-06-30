@@ -1,0 +1,39 @@
+GUIEditor = {
+    button = {},
+    edit = {},
+    window = {},
+    combobox = {},
+    checkbox = {},
+    label = {},
+    radiobutton = {},
+}
+GUIEditor.window[1] = guiCreateWindow(215, 367, 302, 202, "Mute a Player", false)
+guiWindowSetSizable(GUIEditor.window[1], false)
+
+GUIEditor.label[1] = guiCreateLabel(4, 21, 292, 22, "Select a reason or enter a custom reason:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[1], "default-bold-small")
+guiLabelSetColor(GUIEditor.label[1], 245, 157, 9)
+guiLabelSetHorizontalAlign(GUIEditor.label[1], "center", false)
+GUIEditor.combobox[1] = guiCreateComboBox(9, 38, 284, 155, "", false, GUIEditor.window[1])
+
+GUIEditor.checkbox[1] = guiCreateCheckBox(1, 24, 16, 23, "", false, false, GUIEditor.combobox[1])
+GUIEditor.edit[1] = guiCreateEdit(19, 24, 265, 23, "", false, GUIEditor.combobox[1])
+GUIEditor.checkbox[2] = guiCreateCheckBox(0, 68, 84, 21, "Global Mute", false, false, GUIEditor.combobox[1])
+GUIEditor.checkbox[3] = guiCreateCheckBox(87, 68, 101, 21, "Mainchat Mute", false, false, GUIEditor.combobox[1])
+GUIEditor.checkbox[4] = guiCreateCheckBox(188, 68, 101, 21, "Support Mute", false, false, GUIEditor.combobox[1])
+GUIEditor.radiobutton[1] = guiCreateRadioButton(100, 110, 59, 15, "Sec.", false, GUIEditor.combobox[1])
+guiRadioButtonSetSelected(GUIEditor.radiobutton[1], true)
+GUIEditor.radiobutton[2] = guiCreateRadioButton(161, 110, 59, 15, "Min.", false, GUIEditor.combobox[1])
+GUIEditor.radiobutton[3] = guiCreateRadioButton(222, 110, 59, 15, "Hrs.", false, GUIEditor.combobox[1])
+GUIEditor.edit[2] = guiCreateEdit(0, 106, 98, 24, "", false, GUIEditor.combobox[1])
+
+GUIEditor.label[2] = guiCreateLabel(4, 87, 292, 22, "Select a mute type:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[2], "default-bold-small")
+guiLabelSetColor(GUIEditor.label[2], 245, 157, 9)
+guiLabelSetHorizontalAlign(GUIEditor.label[2], "center", false)
+GUIEditor.label[3] = guiCreateLabel(4, 128, 292, 22, "Select a mute time:", false, GUIEditor.window[1])
+guiSetFont(GUIEditor.label[3], "default-bold-small")
+guiLabelSetColor(GUIEditor.label[3], 245, 157, 9)
+guiLabelSetHorizontalAlign(GUIEditor.label[3], "center", false)
+GUIEditor.button[1] = guiCreateButton(9, 172, 138, 22, "Mute Player", false, GUIEditor.window[1])
+GUIEditor.button[2] = guiCreateButton(150, 172, 141, 22, "Cancel", false, GUIEditor.window[1])

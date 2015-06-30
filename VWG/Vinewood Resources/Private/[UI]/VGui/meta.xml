@@ -1,0 +1,10 @@
+<meta>
+    <script src="edit.luac" type="client" />
+    <script src="util_functions.luac" type="client" />
+    <script src="buttons.luac" type="client" />
+
+    <file src="images/edit_field.png" type="client" />
+    <export function="createEditBox" type="client" />
+    <export function="setEditBoxVisible" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

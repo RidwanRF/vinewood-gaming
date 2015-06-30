@@ -1,0 +1,15 @@
+
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawLine(328, 237, 1092, 237, tocolor(255, 255, 255, 255), 1, true)
+        dxDrawText("Your Inventory", 328, 176, 832, 234, tocolor(255, 255, 255, 255), 2, "bankgothic", "left", "top", false, false, true, false, false)
+        dxDrawRectangle(325, 261, 109, 91, tocolor(0, 0, 0, 145), true)
+        dxDrawText("x1", 457, 463, 474, 479, tocolor(255, 255, 255, 255), 1, "default-bold", "left", "top", false, false, true, false, false)
+        dxDrawRectangle(453, 261, 109, 91, tocolor(0, 0, 0, 145), true)
+        dxDrawRectangle(587, 261, 109, 91, tocolor(0, 0, 0, 145), true)
+        dxDrawRectangle(720, 261, 109, 91, tocolor(0, 0, 0, 145), true)
+        dxDrawRectangle(852, 261, 109, 91, tocolor(0, 0, 0, 145), true)
+        dxDrawRectangle(984, 261, 109, 91, tocolor(0, 0, 0, 145), true)
+    end
+)

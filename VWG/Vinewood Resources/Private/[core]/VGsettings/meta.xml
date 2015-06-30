@@ -1,0 +1,9 @@
+<meta>
+    <script src="settings.luac" type="client" />
+    <script src="client.luac" type="client" />
+    <export function="getPlayerSetting" type="client" />
+    <export function="setPlayerSetting" type="client" />
+    <export function="addPlayerSetting" type="client" />
+    <export function="getPlayerSettingTable" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

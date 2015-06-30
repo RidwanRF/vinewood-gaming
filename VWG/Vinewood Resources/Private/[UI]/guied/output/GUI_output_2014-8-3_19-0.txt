@@ -1,0 +1,59 @@
+--[[-------------------------------------------------
+Notes:
+
+> This code is using a custom font. This will only work as long as the location it is from always exists, and the resource it is part of is running.
+    To ensure it does not break, it is highly encouraged to move custom fonts into your local resource and reference them there.
+--]]-------------------------------------------------
+
+
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()    
+    end
+)
+
+local dxfont_0 = dxCreateFont(":guied/fonts/Sansation_Regular.ttf")
+local dxfont_1 = dxCreateFont(":guied/fonts/Sansation_Regular.ttf")
+local dxfont_2 = dxCreateFont(":guied/fonts/Sansation_Bold.ttf")
+local dxfont_3 = dxCreateFont(":guied/fonts/Sansation_Bold.ttf")
+local dxfont_4 = dxCreateFont(":guied/fonts/Sansation_Regular.ttf")
+local dxfont_5 = dxCreateFont(":guied/fonts/Sansation_Regular.ttf")
+local dxfont_6 = dxCreateFont(":guied/fonts/Sansation_Bold.ttf")
+local dxfont_7 = dxCreateFont(":guied/fonts/Sansation_Bold.ttf")
+local dxfont_8 = dxCreateFont(":guied/fonts/Sansation_Bold.ttf")
+
+addEventHandler("onClientRender", root,
+    function()
+        dxDrawRectangle(55, 187, 374, 40, tocolor(0, 0, 0, 134), true)
+        dxDrawText("Label 1", 62, 188, 268, 225, tocolor(255, 255, 255, 255), 1.00, dxfont_0, "left", "center", false, false, true, false, false)
+        dxDrawText("Cato 1", 98, 188, 421, 225, tocolor(255, 255, 255, 255), 1.00, userdata: 00020195, "left", "center", false, false, true, false, false)
+        dxDrawRectangle(55, 226, 374, 40, tocolor(0, 0, 0, 134), true)
+        dxDrawText("Label 2", 62, 227, 268, 264, tocolor(255, 255, 255, 255), 1.00, dxfont_1, "left", "center", false, false, true, false, false)
+        dxDrawRectangle(55, 159, 374, 28, tocolor(0, 0, 0, 217), true)
+        dxDrawText("WHEELS", 62, 159, 268, 186, tocolor(255, 255, 255, 255), 1.00, dxfont_2, "left", "center", false, false, true, false, false)
+        dxDrawRectangle(55, 55, 374, 104, tocolor(0, 0, 0, 255), true)
+        dxDrawText("PRICE", 269, 159, 421, 186, tocolor(255, 255, 255, 255), 1.00, dxfont_3, "right", "center", false, false, true, false, false)
+        dxDrawText("Price Label 1", 269, 188, 421, 225, tocolor(255, 255, 255, 255), 1.00, dxfont_4, "right", "center", false, false, true, false, false)
+        dxDrawText("Price Label 2", 269, 227, 421, 264, tocolor(255, 255, 255, 255), 1.00, dxfont_5, "right", "center", false, false, true, false, false)
+        dxDrawRectangle(55, 266, 374, 28, tocolor(0, 0, 0, 217), true)
+        dxDrawRectangle(55, 297, 374, 40, tocolor(0, 0, 0, 134), true)
+        dxDrawRectangle(55, 337, 374, 40, tocolor(0, 0, 0, 134), true)
+        dxDrawRectangle(55, 377, 374, 40, tocolor(0, 0, 0, 134), true)
+        dxDrawText("Top Speed", 62, 299, 268, 336, tocolor(255, 255, 255, 255), 1.00, dxfont_6, "left", "center", false, false, true, false, false)
+        dxDrawText("Acceleration", 62, 338, 268, 375, tocolor(255, 255, 255, 255), 1.00, dxfont_7, "left", "center", false, false, true, false, false)
+        dxDrawText("Braking", 62, 377, 268, 414, tocolor(255, 255, 255, 255), 1.00, dxfont_8, "left", "center", false, false, true, false, false)
+        dxDrawRectangle(230, 313, 192, 9, tocolor(110, 110, 110, 255), true)
+        dxDrawRectangle(230, 391, 192, 9, tocolor(110, 110, 110, 255), true)
+        dxDrawRectangle(230, 353, 192, 9, tocolor(110, 110, 110, 255), true)
+        dxDrawRectangle(230, 391, 83, 9, tocolor(255, 255, 255, 255), true)
+        dxDrawRectangle(230, 353, 114, 9, tocolor(255, 255, 255, 255), true)
+        dxDrawRectangle(230, 313, 153, 9, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(238, 268, 17, 11, ":guied/images/up.png", 0, 0, 11, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(238, 280, 17, 11, ":guied/images/down.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(55, 55, 372, 104, ":guied/images/header.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(391, 232, 33, 29, ":guied/images/car1.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(62, 193, 31, 27, ":guied/images/star.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(391, 192, 33, 29, ":guied/images/car1.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawImage(62, 232, 31, 27, ":guied/images/star.png", 0, 0, 0, tocolor(255, 255, 255, 255), true)
+        dxDrawText("Cato 2", 98, 227, 421, 264, tocolor(255, 255, 255, 255), 1.00, userdata: 00020195, "left", "center", false, false, true, false, false)
+    end
+)

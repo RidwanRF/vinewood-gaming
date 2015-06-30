@@ -1,0 +1,9 @@
+<meta>
+    <script src="Ban/server.lua" type="server" />
+
+    <export function="addBan" type="server" />
+    <export function="removeBan" type="server" />
+    <export function="getServerBans" type="server" />
+    <export function="resentAdminTable" type="server" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

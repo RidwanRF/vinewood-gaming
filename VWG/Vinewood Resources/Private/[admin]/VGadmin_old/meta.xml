@@ -1,0 +1,42 @@
+<meta>
+    <!--Functions-->
+    <script src="Functions/warp.lua" type="server" />
+    <script src="Functions/spectate.luac" type="client" />
+    <script src="Functions/commands.lua" type="server" />
+    <script src="Functions/countrycodes.lua" type="server" />
+    <script src="Functions/developer.lua" type="server" />
+    <script src="Functions/screenshots.lua" type="server" />
+    <!--GUI-->
+    <script src="GUI/client.luac" type="client" />
+    <script src="GUI/logins.luac" type="client" />
+    <script src="GUI/punishlog.luac" type="client" />
+    <script src="GUI/punishments.luac" type="client" />
+    <script src="GUI/screenshots.lua" type="client" />
+    <!--Server/Client-->
+    <script src="server.lua" type="server" />
+    <script src="ACL.luac" type="client" />
+    <script src="client.luac" type="client" />
+    <!--ACL Management-->
+    <script src="Functions/ACLM/ACL_client.luac" type="client" />
+    <script src="Functions/ACLM/ACL_server.lua" type="server" />
+    <script src="Functions/ACLM/ACL_GUI.luac" type="client" />
+    <file src="Functions/ACLM/images/dot.png" />
+    <file src="Functions/ACLM/images/dropdown.png" />
+    <file src="Functions/ACLM/images/empty.png" />
+    <!--Resources-->
+    <script src="Functions/Resources/client.luac" type="client" />
+    <script src="Functions/Resources/server.lua" type="server" />
+    <!--Exports-->
+    <export function="isPlayerAdmin" type="server" />
+    <export function="isPlayerAdmin" type="client" />
+    <export function="isAdminOnDuty" type="server" />
+    <export function="isAdminOnDuty" type="client" />
+    <export function="getPlayerAdminRank" type="server" />
+    <export function="getPlayerAdminRank" type="client" />
+    <export function="getPlayerAdminRankName" type="server" />
+    <export function="getPlayerAdminRankName" type="client" />
+    <export function="isPlayerDeveloper" type="server" />
+    <export function="isPlayerEventManager" type="server" />
+    <export function="getOnlineAdmins" type="server" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

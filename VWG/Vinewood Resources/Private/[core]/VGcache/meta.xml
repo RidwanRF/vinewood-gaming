@@ -1,0 +1,13 @@
+<meta>
+    <script src="server.lua" type="server" />
+    <script src="client.luac" type="client" />
+    <!-- Client exports -->
+    <export function="setTemporaryData" type="client" />
+    <export function="getTemporaryData" type="client" />
+    <export function="removeTemporaryData" type="client" />
+    <!-- Server exports -->
+    <export function="setTemporaryData" type="server" />
+    <export function="getTemporaryData" type="server" />
+    <export function="removeTemporaryData" type="server" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

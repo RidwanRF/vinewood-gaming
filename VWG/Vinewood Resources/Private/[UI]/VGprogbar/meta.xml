@@ -1,0 +1,9 @@
+<meta>
+    <script src="client.luac" type="client" />
+    <export function="createProgressBar" type="client" />
+    <export function="destroyProgressBar" type="client" />
+    <export function="dxCreateProgressBar" type="client" />
+    <export function="dxChangeProgressBarProgress" type="client" />
+    <export function="dxGetProgressBarProgress" type="client" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>
